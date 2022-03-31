@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ReactPlayer from 'react-player'
+import image from './nature4k.jpg'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{border:'solid 1px black', maxWidth: '100vw'}}>
+
+        <h1 className='title'>PLANET</h1>
+
+        <br/>
+
+        <img src="./city.jpg" alt="mycity" />
+
+        <br/>
+
+        <img src={image} alt="nature"/>
+
+      </div>
+      <ReactPlayer url='https://www.youtube.com/watch?v=SMKPKGW083c&t=46s' />
     </div>
   );
 }
